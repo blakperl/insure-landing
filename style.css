@@ -1,0 +1,341 @@
+/* GENERAL ELEMENTS */
+.section {
+    /* border-top: 1px solid #ddd; */
+  
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .first {
+    /* height: 20vh; */
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+  }
+  
+  .first nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0 2rem 0 2rem; */
+  }
+  
+  nav .insure img {
+    color: rgb(47, 42, 48)
+  
+  }
+  
+  .first ul {
+    list-style: none;
+    margin : 0;
+    padding: 0; 
+    overflow: hidden;
+  }
+  
+  .first li {
+    float: left;
+  }
+  
+  .first li a {
+    display: inline-block;
+    /* margin-right: 2rem; */
+    padding: 12px 14px;
+    font-size: 9px;
+    text-decoration: none;
+    color: rgb(90, 77, 92);
+    letter-spacing: 1px;
+    /* nav ul */
+  }
+  li a:hover {
+    color: rgb(10, 8, 10);
+  }
+  
+  li.cta a {
+    background-color: #fff;
+    padding: 10px 1rem;
+    border: 1px solid black;
+  }
+  li.cta a:hover {
+    border: 1px solid rgb(21, 16, 22);
+    background-color: rgb(21, 16, 22);
+    color: white;
+  }
+  li.hamburger a {
+    background-color: #fff;
+    border: none;
+    display: none;
+  }
+  li.hamburger a:hover {
+    border: 1px solid rgb(21, 16, 22);
+    background-color: rgb(21, 16, 22);
+    color: white;
+  }
+   
+   .hero {
+    position: relative;
+    padding: 20px 50px;
+    display: flex;
+    background-color: rgb(21, 16, 22);
+    align-items: center;
+    height: 500px;
+  }
+  
+  .hero .content {
+    width: 50%;
+    color: white;
+  }
+  .hero .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .hero .topline {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .hero .topline.visible {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  
+  .hero .hidden.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero .family .fam.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .hero .family .fam.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero .content .topline {
+    width: 20%;
+  }
+  
+  .hero .content h1 {
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 70px;
+  }
+  
+  .hero .content p {
+    line-height: 23px;
+    font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 2rem;
+  }
+  .hero .content a {
+    border: 1px solid white;
+    background-color: rgb(21, 16, 22);
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  .hero .content a:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(21, 16, 22);
+  }
+  .hero .family {
+    position: relative;
+    width: 50%;
+  }
+  .hero .family .fam {
+     position: relative;
+    max-width: 100%;
+    height: 500px;
+    top: 80px;
+  } 
+  .third .forth .fifth {
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+
+  .forth.section .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .forth.section .hidden.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero .pattern1 {
+    position: absolute;
+    right: -47px;
+    top: -18px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .third {
+    height: 20vh;
+    margin-top: 15rem;
+  }
+  
+  .third  .topline {
+    width: 11%;
+    margin-left: 5rem;
+    margin-bottom: 10px;
+    color: rgb(21, 16, 22);
+  }
+  .third .content img {
+    position: absolute;
+    left: -2px;
+    top: 30rem;
+    max-height: 60%;
+  }
+  .third h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-left: 5rem;
+    color: rgb(21, 16, 22);
+  }
+  .forth {
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    padding: 0 4rem 0 4rem;
+  }
+  .forth h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    color: rgb(21, 16, 22);
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+  }
+  .forth p {
+    line-height: 25px;
+    color: rgb(47, 42, 48);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+  }
+  .fifth {
+    padding: 0 4rem 0 4rem;
+    height: 56vh;
+  }
+  .fifth .pattern img {
+    position: absolute;
+    right: -2px;
+    top: 80rem;
+    /* bottom: 20px; */
+    max-height: 40%;
+  }
+  .color {
+    padding: 4rem;
+    background-color: rgb(21, 16, 22);
+    color: #fff;
+    height: 20vh;
+  }
+  .color h1 {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+  }
+  .color a {
+    border: 1px solid white;
+    background-color: rgb(21, 16, 22);
+    color: white;
+    text-decoration: none;
+    padding: 10px 17px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 75%;
+    z-index: 3;
+  }
+  .color a:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(21, 16, 22);
+  }
+  .pattern img {
+    position: absolute;
+    top: 85.5rem;
+    left: 61.5%;
+    max-height: 67%;
+  }
+  .last {
+    background-color: rgba(239, 234, 241, 0.89);
+    height: 50vh;
+    padding: 2rem 5rem 2rem 5rem;
+  }
+  .last nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .icons ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  .icons li {
+    float: left;
+  }
+  .icons ul li a {
+    display: inline;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  .icons ul li a:hover {
+    background-color: rgb(21, 16, 22);
+  }
+  hr {
+    color: rgb(104, 96, 105);
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flex h4 {
+    color: rgb(104, 96, 105);
+    letter-spacing: 2px;
+    line-height: 15px;
+    margin-top: 2rem;
+    margin-left: 12px;
+  }
+  .flex ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .flex ul li a {
+    display: inline-block;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: rgb(21, 16, 22);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .flex ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
